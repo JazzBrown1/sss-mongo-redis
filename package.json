@@ -1,0 +1,15 @@
+{
+  "name": "sss-mongo-redis",
+  "version": "0.1.0",
+  "description": "Scaler for Super Scaled Sockets",
+  "main": "src/mongoRedis.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "mongodb": "^3.2.4",
+    "redis": "^2.8.0"
+  },
+  "author": "Jazz Brown",
+  "license": "MIT"
+}
