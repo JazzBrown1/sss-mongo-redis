@@ -1,14 +1,13 @@
 {
   "name": "sss-mongo-redis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scaler for Super Scaled Sockets",
   "main": "src/mongoRedis.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/JazzBrown1/sss-mongo-redis.git"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
     "mongodb": "^3.2.4",
     "redis": "^2.8.0"
