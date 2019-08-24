@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "description": "Scaler for Super Scaled Sockets",
   "main": "src/mongoRedis.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JazzBrown1/sss-mongo-redis.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "mongodb": "^3.2.4",
