@@ -21,10 +21,14 @@ On nmp run the following command:
 npm install sss-mongo-redis
 ~~~~
 
-#### Getting Started
+#### Usage
 
 ~~~
 // mongo connection info all properties are required
+
+const sss = require('super-scaled-sockets');
+const mongoRedis = require('sss-mongo-redis');
+
 const mongoConnection = {
   uri: 'mongodb+srv://smartUsername:smartPassword@cluster0-abcd.zyx.mongodb.net/test?retryWrites=true',
   dbName: 'redis',
@@ -38,11 +42,12 @@ const redisConnection = {
   port: 123456
 };
 
-sss.scaler.mongoRedis.connect(mongoConnection, redisConnection, (err, scaler) => {
+mongoRedis.connect(mongoConnection, redisConnection, (err, scaler) => {
   if (err) {
     console.log('Error establishing scaler connection');
     return;
   }
+  sss.connect(scaler, {}, (error) => {
   // ......
 ~~~
 
