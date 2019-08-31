@@ -1,6 +1,6 @@
 {
   "name": "sss-mongo-redis",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Scaler for Super Scaled Sockets",
   "main": "src/mongoRedis.js",
   "repository": {
