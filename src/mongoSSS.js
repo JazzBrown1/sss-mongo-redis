@@ -39,11 +39,11 @@ const mongoSSS = (table) => ({
   getSince: (channel, id, callback) => {
     table.find({ channel: channel, _id: { $gt: mongo.ObjectId(id) } }).sort({ _id: -1 }).toArray((err, result) => {
       if (!err) {
-        if (result > 0) {
+        if (result.length > 0) {
           result.forEach((record) => {
             record.data.uid = record._id.toString();
           });
-          callback(null, result.data._id, result.data);
+          callback(null, result.map((i) => i.data).reverse());
         } else callback(null, null);
       } else callback(err, null);
     });

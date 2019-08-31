@@ -1,7 +1,5 @@
 # Super Scaled Sockets - The Mongo Redis Super Scaler
 
-### What is Super Scaled Sockets?
-
 This is the Mongo Redis Scaler for the Super Scaled Sockets Library.
 
 ### Prerequisites
@@ -24,11 +22,10 @@ npm install sss-mongo-redis
 #### Usage
 
 ~~~
-// mongo connection info all properties are required
-
 const sss = require('super-scaled-sockets');
 const mongoRedis = require('sss-mongo-redis');
 
+// mongo connection info all properties are required
 const mongoConnection = {
   uri: 'mongodb+srv://smartUsername:smartPassword@cluster0-abcd.zyx.mongodb.net/test?retryWrites=true',
   dbName: 'redis',
@@ -47,8 +44,9 @@ mongoRedis.connect(mongoConnection, redisConnection, (err, scaler) => {
     console.log('Error establishing scaler connection');
     return;
   }
-  sss.connect(scaler, {}, (error) => {
-  // ......
+  const client = sss.client(scaler, {})
+  client.connect((error) => {
+    // ......
 ~~~
 
 For details about setting up the rest of Super Scaled Sockets please see the [Super Scaled Sockets Page](https://github.com/JazzBrown1/super-scaled-sockets).
