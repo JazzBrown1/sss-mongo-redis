@@ -1,3 +1,5 @@
+# ARCHIVED - NO LONGER SUPPORTED
+
 # Super Scaled Sockets - The Mongo Redis Super Scaler
 
 This is the Mongo Redis Scaler for the Super Scaled Sockets Library.
