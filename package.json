@@ -10,7 +10,7 @@
   "scripts": {},
   "dependencies": {
     "mongodb": "^3.2.4",
-    "redis": "^2.8.0"
+    "redis": "^3.1.1"
   },
   "author": "Jazz Brown",
   "license": "MIT"
